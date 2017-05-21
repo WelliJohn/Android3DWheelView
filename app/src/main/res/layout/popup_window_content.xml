@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#80000000"
+    android:orientation="horizontal">
+
+
+    <wellijohn.org.android3dwheelview.loopview.LoopView
+        android:id="@+id/loopview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:awv_isLoop="false"
+        app:awv_itemsVisibleCount="7"
+        android:layout_weight="1"
+        app:awv_textsize="18"/>
+    <wellijohn.org.android3dwheelview.loopview.LoopView
+        android:id="@+id/loopview_right"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        app:awv_isLoop="false"
+        app:awv_itemsVisibleCount="7"
+        app:awv_textsize="18"/>
+
+
+
+
+
+</LinearLayout>

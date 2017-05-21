@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>WelliJohn1</item>
+        <item>WelliJohn2</item>
+        <item>WelliJohn3</item>
+        <item>WelliJohn4</item>
+        <item>WelliJohn5</item>
+        <item>WelliJohn6</item>
+        <item>WelliJohn7</item>
+        <item>WelliJohn8</item>
+        <item>WelliJohn9</item>
+        <item>WelliJohn10</item>
+        <item>WelliJohn11</item>
+        <item>WelliJohn12</item>
+        <item>WelliJohn13</item>
+    </string-array>
+</resources>
