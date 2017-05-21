@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android3DWheelViewDemo.iml" filepath="$PROJECT_DIR$/Android3DWheelViewDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android3DWheelView.iml" filepath="$PROJECT_DIR$/Android3DWheelView.iml" />
       <module fileurl="file://$PROJECT_DIR$/android3dwheelview/android3dwheelview.iml" filepath="$PROJECT_DIR$/android3dwheelview/android3dwheelview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
