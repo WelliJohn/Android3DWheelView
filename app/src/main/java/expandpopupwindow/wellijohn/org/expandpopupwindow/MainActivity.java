@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 List<OnTextDislpayListener> list = new ArrayList<>();
-                for(int i=0;i<4;i++){
+                for(int i=0;i<17;i++){
                     Person person = new Person();
-                    person.setAge(19+i);
-                    person.setName("jww");
+                    person.setAge(i);
+                    person.setName("list添加的对象需实现onDisplayTextListener接口");
                     list.add(person);
                 }
                /* List<String> datas = Arrays.asList(getResources().getStringArray(R.array.names));*/

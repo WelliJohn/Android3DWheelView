@@ -10,27 +10,19 @@
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:text="Hello World!" />
+        android:text="show_wheel_view"
+        android:textSize="20sp"
+        android:gravity="center"/>
 
 
     <LinearLayout
         android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="来设置，如果focusable为false，在一个Activity弹出一个PopupWindow，按返回键，由于PopupWindow没有焦点，会直接退出Activity。如果focusable为true，PopupWindow弹出后，所有的触屏和物理按键都有PopupWindows处理。
-
-如果PopupWindow中有Editor的话，focusable要为true。
-
-下面实现一个简单的PopupWindow
-
-主界面的layout为：" />
+        android:background="@android:color/white"
+        android:orientation="horizontal">
     </LinearLayout>
 
 </LinearLayout>

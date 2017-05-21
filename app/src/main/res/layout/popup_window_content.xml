@@ -12,17 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:awv_isLoop="false"
-        app:awv_itemsVisibleCount="7"
+        app:awv_itemsVisibleCount="17"
         android:layout_weight="1"
-        app:awv_textsize="18"/>
+        app:awv_textsize="20"/>
     <wellijohn.org.android3dwheelview.loopview.LoopView
         android:id="@+id/loopview_right"
         android:layout_width="wrap_content"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         app:awv_isLoop="false"
-        app:awv_itemsVisibleCount="7"
-        app:awv_textsize="18"/>
+        app:awv_itemsVisibleCount="17"
+        app:awv_textsize="20"/>
 
 
 
