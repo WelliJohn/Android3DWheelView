@@ -6,5 +6,4 @@
 3、支持warp_content，对于不确定高度的，只需要设置awv_itemsVisibleCount属性，会根据控件个数自动调整滚轮的高度。
 
 展示的效果图：
-![](https://raw.githubusercontent.com/WelliJohn/Android3DWheelView/master/screenshots/Screenshot_20170521-230807.png)
-控件由此处改造 鸣谢：https://github.com/weidongjian/androidWheelView
+![](https://raw.githubusercontent.com/WelliJohn/Android3DWheelView/master/screenshots/Screenshot_20170521-230807.png)控件由此处改造 鸣谢：https://github.com/weidongjian/androidWheelView
