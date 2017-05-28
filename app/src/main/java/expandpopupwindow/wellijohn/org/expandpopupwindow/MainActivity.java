@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                List<OnTextDislpayListener> list = new ArrayList<>();
+                List<Person> list = new ArrayList<>();
                 for(int i=0;i<17;i++){
                     Person person = new Person();
                     person.setAge(i);

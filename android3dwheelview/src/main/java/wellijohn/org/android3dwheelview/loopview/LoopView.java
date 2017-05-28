@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -28,7 +29,7 @@ import wellijohn.org.android3dwheelview.listener.OnTextDislpayListener;
 /**
  * Created by Weidongjian on 2015/8/18.
  */
-public class LoopView extends View {
+public class LoopView<T extends OnTextDislpayListener> extends View {
 
     private float scaleX = 1.05F;
 
@@ -56,7 +57,7 @@ public class LoopView extends View {
     private Paint paintCenterText;
     private Paint paintIndicator;
 
-    List<OnTextDislpayListener> items;
+    List<T> items;
 
     int textSize;
     int maxTextHeight;
@@ -99,6 +100,7 @@ public class LoopView extends View {
     private int heightByMeasureVisibleChild;
 
     private int widthByMeasureVisibleChild;
+
 
     /**
      * set text line space, must more than 1
@@ -339,7 +341,7 @@ public class LoopView extends View {
         onItemSelectedListener = OnItemSelectedListener;
     }
 
-    public void setItems(List<OnTextDislpayListener> items) {
+    public void setItems(List<T> items) {
         this.items = items;
         remeasure();
         invalidate();
