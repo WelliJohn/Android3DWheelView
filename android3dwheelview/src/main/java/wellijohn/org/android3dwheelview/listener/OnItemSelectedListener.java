@@ -4,7 +4,7 @@
 
 package wellijohn.org.android3dwheelview.listener;
 
-
+@Deprecated
 public interface OnItemSelectedListener<T extends OnTextDislpayListener>  {
     void onItemSelected(int index,T item);
 }

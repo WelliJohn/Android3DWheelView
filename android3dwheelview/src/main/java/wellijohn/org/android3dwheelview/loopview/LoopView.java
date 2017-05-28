@@ -698,4 +698,9 @@ public class LoopView<T extends OnTextDislpayListener> extends View {
         invalidate();
         return true;
     }
+
+
+    public interface OnItemSelectedListener<T> {
+        void onItemSelected(int index, T item);
+    }
 }

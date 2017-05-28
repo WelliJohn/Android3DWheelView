@@ -14,19 +14,16 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 import expandpopupwindow.wellijohn.org.expandpopupwindow.bean.Person;
-import wellijohn.org.android3dwheelview.listener.OnItemSelectedListener;
-import wellijohn.org.android3dwheelview.listener.OnTextDislpayListener;
 import wellijohn.org.android3dwheelview.loopview.LoopView;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView tv;
     private LinearLayout ll;
-    private LoopView mLoopview;
+    private LoopView<Person> mLoopview;
     private LoopView mLoopviewRight;
 
     @Override
@@ -68,10 +65,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mLoopview.setOnItemSelectedListener(new OnItemSelectedListener<Person>() {
+        mLoopview.setOnItemSelectedListener(new LoopView.OnItemSelectedListener<Person>() {
             @Override
             public void onItemSelected(int index, Person item) {
-                Toast.makeText(MainActivity.this,item.getAge()+","+item.getName(),Toast.LENGTH_LONG).show();
+
             }
         });
     }
