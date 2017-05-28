@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tv;
     private LinearLayout ll;
-    private LoopView<Person> mLoopview;
+    private LoopView mLoopview;
     private LoopView mLoopviewRight;
 
     @Override

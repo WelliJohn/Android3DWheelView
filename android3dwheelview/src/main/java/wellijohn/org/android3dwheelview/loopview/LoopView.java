@@ -8,28 +8,24 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-
 import wellijohn.org.android3dwheelview.R;
-import wellijohn.org.android3dwheelview.listener.OnItemSelectedListener;
 import wellijohn.org.android3dwheelview.listener.OnItemSelectedRunnable;
 import wellijohn.org.android3dwheelview.listener.OnTextDislpayListener;
 
 /**
  * Created by Weidongjian on 2015/8/18.
  */
-public class LoopView<T extends OnTextDislpayListener> extends View {
+public class LoopView extends View {
 
     private float scaleX = 1.05F;
 
@@ -57,7 +53,7 @@ public class LoopView<T extends OnTextDislpayListener> extends View {
     private Paint paintCenterText;
     private Paint paintIndicator;
 
-    List<T> items;
+    List<OnTextDislpayListener> items;
 
     int textSize;
     int maxTextHeight;
@@ -341,8 +337,8 @@ public class LoopView<T extends OnTextDislpayListener> extends View {
         onItemSelectedListener = OnItemSelectedListener;
     }
 
-    public void setItems(List<T> items) {
-        this.items = items;
+    public <T extends OnTextDislpayListener> void setItems(List<T> items) {
+        this.items = (List<OnTextDislpayListener>) items;
         remeasure();
         invalidate();
     }
