@@ -5,7 +5,7 @@
 
 Gradle via JCenter
 
-compile 'wellijohn.org.android3dwheelview:android3dwheelview:1.0.0'
+compile 'wellijohn.org.android3dwheelview:android3dwheelview:1.0.1'
 
 使用注意点：
 
